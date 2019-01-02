@@ -21,6 +21,10 @@
   color: white;
   margin-top: 8px;
 }
-.icon {
+.icons {
   color: white;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 50px;
+  align-items: center;
 }
