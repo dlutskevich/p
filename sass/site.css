@@ -59,3 +59,32 @@ h2 {
   margin-left: 220px;
   font-family: "Dancing Script", cursive;
 }
+
+.effect.eff-6 .caption {
+  opacity: 0;
+}
+
+.effect.eff-6 .caption h4,
+.effect.eff-6 .caption a.btn {
+  -webkit-transition: all 0.2s linear 0.1s;
+  transition: all 0.2s linear 0.1s;
+}
+
+.effect.eff-6 .caption h4 {
+  left: 100%;
+}
+
+.effect.eff-6 .caption a.btn {
+  left: -100%;
+}
+
+.effect.eff-6:hover .caption {
+  opacity: 1;
+  -webkit-transition: all 0.5s linear 0s;
+  transition: all 0.5s linear 0s;
+}
+
+.effect.eff-6:hover .caption h4,
+.effect.eff-6:hover .caption a.btn {
+  left: 0;
+}
