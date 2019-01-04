@@ -37,54 +37,60 @@ body {
   width: 100%;
 }
 
-h2 {
-  position: absolute;
+.card {
+  overflow: hidden;
+  border-radius: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card_image {
+  width: 100%;
+  -webkit-transition: -webkit-transform 200ms ease-in;
+  transition: -webkit-transform 200ms ease-in;
+  transition: transform 200ms ease-in;
+  transition: transform 200ms ease-in, -webkit-transform 200ms ease-in;
+}
+
+.card_caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   text-align: center;
-  top: 400px;
-  left: 0;
-  width: 60%;
   color: white;
-  background-color: rgba(29, 29, 29, 0.6);
-  padding: 30px;
-  margin-left: 220px;
-  font-family: "Dancing Script", cursive;
-}
-
-.effect.eff-6 .caption {
   opacity: 0;
+  -webkit-transition: opacity 300ms ease-in;
+  transition: opacity 300ms ease-in;
 }
 
-.effect.eff-6 .caption h4,
-.effect.eff-6 .caption a.btn {
-  -webkit-transition: all 0.2s linear 0.1s;
-  transition: all 0.2s linear 0.1s;
-}
-
-.effect.eff-6 .caption h4 {
-  left: 100%;
-}
-
-.effect.eff-6 .caption a.btn {
-  left: -100%;
-}
-
-.effect.eff-6:hover .caption {
+.card:hover .card_caption {
   opacity: 1;
-  -webkit-transition: all 0.5s linear 0s;
-  transition: all 0.5s linear 0s;
 }
 
-.effect.eff-6:hover .caption h4,
-.effect.eff-6:hover .caption a.btn {
-  left: 0;
+.card:hover .card_image {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 100px;
+}
+/*# sourceMappingURL=site.css.map */
