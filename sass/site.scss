@@ -2,6 +2,7 @@ body {
   background-color: rgb(241, 240, 240);
   margin: 0px 50px;
 }
+
 .navigation {
   align-items: center;
   background-color: white;
@@ -10,62 +11,61 @@ body {
   justify-content: center;
   height: 70px;
 }
+
 .work {
   margin: 0 30px;
   color: black;
   font-family: "Quicksand", sans-serif;
   background-color: transparent;
 }
+
 .pic-text {
   color: black;
 }
+
 .image {
   position: relative;
   width: 100%;
 }
 
-h2 {
-  position: absolute;
+.card {
+  overflow: hidden;
+  border-radius: 25px;
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  text-align: center;
-  top: 400px;
-  left: 0;
-  width: 60%;
-  color: white;
-  background-color: rgba(29, 29, 29, 0.6);
-  padding: 30px;
-  margin-left: 220px;
-  font-family: "Dancing Script", cursive;
-}
-.effect.eff-6 .caption {
-  opacity: 0;
+  align-items: center;
+
+  &_image {
+    width: 100%;
+
+    transition: transform 200ms ease-in;
+
+  }
+
+  &_caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    opacity: 0;
+    transition: opacity 300ms ease-in;
+  }
+
+  &:hover &_caption {
+    opacity: 1;
+  }
+
+  &:hover &_image {
+    transform: scale(1.05)
+  }
 }
 
-.effect.eff-6 .caption h4,
-.effect.eff-6 .caption a.btn {
-  -o-transition: all 0.2s linear 0.1s;
-  -webkit-transition: all 0.2s linear 0.1s;
-  transition: all 0.2s linear 0.1s;
-}
 
-.effect.eff-6 .caption h4 {
-  left: 100%;
-}
-
-.effect.eff-6 .caption a.btn {
-  left: -100%;
-}
-
-.effect.eff-6:hover .caption {
-  opacity: 1;
-  -o-transition: all 0.5s linear 0s;
-  -webkit-transition: all 0.5s linear 0s;
-  transition: all 0.5s linear 0s;
-}
-
-.effect.eff-6:hover .caption h4,
-.effect.eff-6:hover .caption a.btn {
-  left: 0;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
 }
