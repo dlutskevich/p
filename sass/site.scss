@@ -2,17 +2,21 @@ body {
   padding: 0px;
   margin: 0px;
 }
+
 ul {
   list-style: none;
   margin: 0 auto;
 }
+
 a {
   text-decoration: none;
   transition: 0.5s linear;
 }
+
 i {
   margin-right: 10px;
 }
+
 nav {
   display: flex;
   min-width: 660px;
@@ -20,11 +24,13 @@ nav {
   border-bottom: 3px solid rgb(235, 144, 8);
   background-color: #ffd7a7;
 }
+
 .four ul {
   display: flex;
   background: #ffd7a7;
   padding-left: 0;
 }
+
 .four a {
   padding: 20px;
   display: block;
@@ -32,9 +38,11 @@ nav {
   border-right: 1px solid #ffab51;
   background: rgba(255, 171, 81, 0.3);
 }
+
 .four a:hover {
   background: #ffab51;
 }
+
 .right-text {
   color: white;
   text-align: right;
@@ -44,66 +52,24 @@ nav {
   justify-content: space-around;
   padding: 10px 0px 10px 0px;
 }
-.card-image {
-  min-width: 1366px;
+
+
+.conteiner {
+
+  background-image: url("/img/321.jpg");
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.example {
-  display: inline-block;
-  position: relative;
-}
-.cat {
-  display: inline-block;
-  position: absolute;
-  right: 200px;
-  left: 200px;
-  top: 20px;
-  min-height: 2300px;
-  opacity: 0.7;
-  background-color: black;
+
+.content {
+  width: 900px;
   color: white;
-  font-size: 20px;
-  text-align: center;
-}
-.text-categories {
-  display: inline-block;
-  position: absolute;
-  right: 200px;
-  left: 200px;
-  top: 55px;
-  color: white;
-  font-size: 20px;
-  text-align: center;
-}
-.text-example {
-  padding-top: 80px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 10px;
-  text-align: center;
-  display: inline-block;
-  position: absolute;
-  right: 200px;
-  left: 200px;
-  top: 10px;
-  color: white;
-  font-size: 16px;
-}
-.card {
-  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /*eto check hovera prosto*/
-  transition: 0.3s;
-  position: relative;
-  top: 250px;
-  padding-top: 110px;
-}
-/*.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /*eto check hovera prosto
-}*/
-.container {
-  padding: 0px 62px;
-  position: absolute;
-  left: 362px;
-}
-.cont {
-  min-height: 500px;
-  background-color: #ffd7a7;
+  background-color: rgba(1, 1, 1, 0.7);
+  padding: 25px;
+
+  .title {
+    text-align: center;
+  }
 }
