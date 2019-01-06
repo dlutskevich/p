@@ -54,7 +54,7 @@ nav {
 }
 
 
-.conteiner {
+.Mainconteiner {
 
   background-image: url("/img/321.jpg");
   min-height: 600px;
@@ -71,5 +71,21 @@ nav {
 
   .title {
     text-align: center;
+  }
+
+  .card {
+    padding: 15px;
+    text-align: center;
+
+    &_img {
+
+      width: 100%;
+    }
+
+    @media screen and (max-width:768px) {
+      &_img {
+        max-width: 300px;
+      }
+    }
   }
 }
