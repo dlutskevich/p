@@ -1,23 +1,36 @@
-body { background-color: #f1f0f0; margin: 0px 50px; }
+body { padding: 0px; margin: 0px; }
 
-.navigation { -webkit-box-align: center; -ms-flex-align: center; align-items: center; background-color: white; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; height: 70px; }
+ul { list-style: none; margin: 0 auto; }
 
-.work { margin: 0 30px; color: black; font-family: "Quicksand", sans-serif; background-color: transparent; }
+a { text-decoration: none; -webkit-transition: 0.5s linear; transition: 0.5s linear; }
 
-.pic-text { color: black; }
+i { margin-right: 10px; }
 
-.image { position: relative; width: 100%; }
+nav { display: -webkit-box; display: -ms-flexbox; display: flex; min-width: 660px; margin-bottom: 0px; border-bottom: 3px solid #eb9008; background-color: #ffd7a7; }
 
-h2 { position: absolute; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; text-align: center; top: 400px; left: 0; width: 60%; color: white; background-color: rgba(29, 29, 29, 0.6); padding: 30px; margin-left: 220px; font-family: "Dancing Script", cursive; }
+.four ul { display: -webkit-box; display: -ms-flexbox; display: flex; background: #ffd7a7; padding-left: 0; }
 
-.effect.eff-6 .caption { opacity: 0; }
+.four a { padding: 20px; display: block; color: #9b4222; border-right: 1px solid #ffab51; background: rgba(255, 171, 81, 0.3); }
 
-.effect.eff-6 .caption h4, .effect.eff-6 .caption a.btn { -webkit-transition: all 0.2s linear 0.1s; transition: all 0.2s linear 0.1s; }
+.four a:hover { background: #ffab51; }
 
-.effect.eff-6 .caption h4 { left: 100%; }
+.right-text { color: white; text-align: right; padding-right: 10px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: distribute; justify-content: space-around; padding: 10px 0px 10px 0px; }
 
-.effect.eff-6 .caption a.btn { left: -100%; }
+.card-image { min-width: 1366px; }
 
-.effect.eff-6:hover .caption { opacity: 1; -webkit-transition: all 0.5s linear 0s; transition: all 0.5s linear 0s; }
+.example { display: inline-block; position: relative; }
 
-.effect.eff-6:hover .caption h4, .effect.eff-6:hover .caption a.btn { left: 0; }
+.cat { display: inline-block; position: absolute; right: 200px; left: 200px; top: 20px; min-height: 2300px; opacity: 0.7; background-color: black; color: white; font-size: 20px; text-align: center; }
+
+.text-categories { display: inline-block; position: absolute; right: 200px; left: 200px; top: 55px; color: white; font-size: 20px; text-align: center; }
+
+.text-example { padding-top: 80px; padding-left: 30px; padding-right: 30px; padding-bottom: 10px; text-align: center; display: inline-block; position: absolute; right: 200px; left: 200px; top: 10px; color: white; font-size: 16px; }
+
+.card { /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /*eto check hovera prosto*/ -webkit-transition: 0.3s; transition: 0.3s; position: relative; top: 250px; padding-top: 110px; }
+
+/*.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /*eto check hovera prosto
+}*/
+.container { padding: 0px 62px; position: absolute; left: 362px; }
+
+.cont { min-height: 500px; background-color: #ffd7a7; }
