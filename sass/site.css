@@ -1,13 +1,57 @@
 body {
-  background-color: #f1f0f0;
-  margin: 0px 50px;
+  padding: 0px;
+  margin: 0px;
 }
 
-.navigation {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: white;
+ul {
+  list-style: none;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+i {
+  margin-right: 10px;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 660px;
+  margin-bottom: 0px;
+  border-bottom: 3px solid #eb9008;
+  background-color: #ffd7a7;
+}
+
+.four ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #ffd7a7;
+  padding-left: 0;
+}
+
+.four a {
+  padding: 20px;
+  display: block;
+  color: #9b4222;
+  border-right: 1px solid #ffab51;
+  background: rgba(255, 171, 81, 0.3);
+}
+
+.four a:hover {
+  background: #ffab51;
+}
+
+.right-text {
+  color: white;
+  text-align: right;
+  padding-right: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15,82 +59,79 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 70px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px 0px 10px 0px;
 }
 
-.work {
-  margin: 0 30px;
-  color: black;
-  font-family: "Quicksand", sans-serif;
-  background-color: transparent;
+.card-image {
+  min-width: 1366px;
 }
 
-.pic-text {
-  color: black;
-}
-
-.image {
+.example {
+  display: inline-block;
   position: relative;
-  width: 100%;
+}
+
+.cat {
+  display: inline-block;
+  position: absolute;
+  right: 200px;
+  left: 200px;
+  top: 20px;
+  min-height: 2300px;
+  opacity: 0.7;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+.text-categories {
+  display: inline-block;
+  position: absolute;
+  right: 200px;
+  left: 200px;
+  top: 55px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+.text-example {
+  padding-top: 80px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  right: 200px;
+  left: 200px;
+  top: 10px;
+  color: white;
+  font-size: 16px;
 }
 
 .card {
-  overflow: hidden;
-  border-radius: 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /*eto check hovera prosto*/
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: relative;
+  top: 250px;
+  padding-top: 110px;
 }
 
-.card_image {
-  width: 100%;
-  -webkit-transition: -webkit-transform 200ms ease-in;
-  transition: -webkit-transform 200ms ease-in;
-  transition: transform 200ms ease-in;
-  transition: transform 200ms ease-in, -webkit-transform 200ms ease-in;
-}
-
-.card_caption {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  opacity: 0;
-  -webkit-transition: opacity 300ms ease-in;
-  transition: opacity 300ms ease-in;
-}
-
-.card:hover .card_caption {
-  opacity: 1;
-}
-
-.card:hover .card_image {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-
+/*.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /*eto check hovera prosto
+}*/
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 100px;
+  padding: 0px 62px;
+  position: absolute;
+  left: 362px;
 }
-/*# sourceMappingURL=site.css.map */
+
+.cont {
+  min-height: 500px;
+  background-color: #ffd7a7;
+}
