@@ -17,9 +17,29 @@
   margin: 20px 0px 0px 10px;
   min-width: 400px;
   min-height: 500px;
-  background-color: black;
-  color: white;
+
   text-align: center;
+
+  .theme-default {
+    background-color: black;
+    color: white;
+  }
+  .red {
+    background-color: red;
+    color: white;
+  }
+  .green {
+    background-color: green;
+    color: white;
+  }
+  .blue {
+    background-color: blue;
+    color: white;
+  }
+  .white {
+    background-color: white;
+    color: black;
+  }
 }
 .buttons {
   display: flex;

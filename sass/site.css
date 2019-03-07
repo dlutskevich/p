@@ -34,9 +34,32 @@
   margin: 20px 0px 0px 10px;
   min-width: 400px;
   min-height: 500px;
+  text-align: center;
+}
+
+.card .theme-default {
   background-color: black;
   color: white;
-  text-align: center;
+}
+
+.card .red {
+  background-color: red;
+  color: white;
+}
+
+.card .green {
+  background-color: green;
+  color: white;
+}
+
+.card .blue {
+  background-color: blue;
+  color: white;
+}
+
+.card .white {
+  background-color: white;
+  color: black;
 }
 
 .buttons {
